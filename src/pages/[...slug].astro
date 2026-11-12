@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('site')).filter((e) => !e.data.draft);
+  return entries.map((entry) => ({
+    // "/start-hier/" -> "start-hier"
+    params: { slug: entry.data.url.replace(/^\/|\/$/g, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const isArticle = d.type === 'artikel';
+const datum = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(d.date);
+---
+
+<Base
+  title={d.title}
+  description={d.description}
+  url={d.url}
+  image={d.image}
+  type={isArticle ? 'article' : 'website'}
+  published={d.date}
+  modified={d.modified}
+>
+  <article class="artikel lese">
+    {isArticle && d.category && <p class="eyebrow">{d.category}</p>}
+    {!isArticle && /^#\s/m.test(entry.body ?? '') ? null : <h1>{d.title}</h1>}
+    {isArticle && (
+      <p class="meta">
+        Von {d.author} · <time datetime={d.date.toISOString()}>{datum}</time>
+      </p>
+    )}
+    {isArticle && d.image && (
+      <figure class="titelbild">
+        <img src={d.image} alt={d.imageAlt} width="1024" height="683" fetchpriority="high" />
+      </figure>
+    )}
+    <div class="prosa"><Content /></div>
+  </article>
+</Base>

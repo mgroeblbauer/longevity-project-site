@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  url?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  published?: Date;
+  modified?: Date;
+}
+const { title, description = '', url = Astro.url.pathname, image, type = 'website', published, modified } = Astro.props;
+const site = 'https://longevity-project.de';
+const canonical = new URL(url, site).href;
+const fullTitle = url === '/' ? 'Longevity Project – Gesund älter werden, belegt erklärt' : `${title} – Longevity Project`;
+const noindex = import.meta.env.PUBLIC_NOINDEX === 'true';
+const ogImage = image ? new URL(image, site).href : undefined;
+
+const jsonLd =
+  type === 'article'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        datePublished: published?.toISOString(),
+        dateModified: (modified ?? published)?.toISOString(),
+        author: { '@type': 'Person', name: 'Michael Gröblbauer' },
+        mainEntityOfPage: canonical,
+        image: ogImage,
+        inLanguage: 'de',
+      }
+    : null;
+
+const nav = [
+  { href: '/start-hier/', label: 'Start hier' },
+  { href: '/longevity-basics/', label: 'Longevity Basics' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/ueber-mich/', label: 'Über mich' },
+];
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="preload" href="/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="de_DE" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="theme-color" content="#17352c" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+    <header class="kopf">
+      <div class="wrap">
+        <a class="marke" href="/">Longevity Project</a>
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="inhalt"><slot /></main>
+    <footer class="fuss">
+      <div class="wrap">
+        <ul>
+          <li><a href="/contact/">Kontakt</a></li>
+          <li><a href="/transparenz/">Transparenz &amp; Affiliate-Hinweis</a></li>
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutzerklaerung/">Datenschutz</a></li>
+        </ul>
+        <p>Alle Inhalte dienen der Information und ersetzen keine ärztliche Beratung.</p>
+        <p>© {new Date().getFullYear()} Michael Gröblbauer</p>
+      </div>
+    </footer>
+  </body>
+</html>

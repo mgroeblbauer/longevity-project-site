@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const artikel = (await getCollection('site'))
+  .filter((e) => e.data.type === 'artikel' && !e.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+---
+
+<Base
+  title="Longevity Project"
+  description="Verständlich erklärt: Was Nahrungsergänzung, Ernährung und Alltag für ein langes, gesundes Leben wirklich bringen. Ohne Heilsversprechen, mit Quellen."
+  url="/"
+>
+  <section class="held">
+    <div class="wrap">
+      <p class="eyebrow" style="color: var(--gold)">Longevity Project</p>
+      <h1>Mehr gesunde Jahre. Mit dem, was wirklich belegt ist.</h1>
+      <p>
+        Verständlich erklärt: Was Nahrungsergänzung, Ernährung und Alltag für ein langes, gesundes Leben wirklich
+        bringen. Ohne Heilsversprechen, mit Quellen.
+      </p>
+      <div class="knoepfe">
+        <a class="knopf knopf--gold" href="/start-hier/">Hier anfangen</a>
+        <a class="knopf knopf--rand" href="/blog/">Neueste Artikel lesen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top: 3.5rem">
+    <h2 style="margin-top: 0">Neueste Artikel</h2>
+    <ul class="karten">
+      {
+        artikel.map((a) => (
+          <li>
+            <a class="karte" href={a.data.url}>
+              {a.data.image ? <img src={a.data.image} alt="" loading="lazy" width="1024" height="683" /> : <div class="platz" />}
+              <div>
+                {a.data.category && <span class="kat">{a.data.category}</span>}
+                <h3>{a.data.title}</h3>
+                <p>{a.data.description}</p>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>

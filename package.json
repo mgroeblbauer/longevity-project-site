@@ -1,0 +1,24 @@
+{
+  "name": "longevity-project-astro",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npm run sync && astro dev",
+    "sync": "node scripts/sync-vault.mjs",
+    "build": "npm run sync && astro build",
+    "preview": "astro preview",
+    "migrate": "node scripts/migrate.mjs",
+    "live": "node scripts/live.mjs",
+    "build:test": "PUBLIC_NOINDEX=true astro build"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.8"
+  },
+  "devDependencies": {
+    "node-html-parser": "^9.0.7",
+    "turndown": "^7.2.5",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
