@@ -75,8 +75,8 @@ h3 { font-size: 1.25rem; margin: 2rem 0 0.5rem; font-weight: 600; }
 .prosa img { border-radius: 8px; margin-block: 1.5rem; }
 .prosa blockquote {
   margin: 1.75rem 0; padding: 1.1rem 1.4rem;
-  background: var(--salbei); border-left: 4px solid var(--wald);
-  border-radius: 0 8px 8px 0;
+  background: var(--salbei); border: 1px solid var(--linie);
+  border-radius: 8px;
 }
 .prosa blockquote > * { margin: 0; }
 .prosa blockquote > * + * { margin-top: 0.6rem; }

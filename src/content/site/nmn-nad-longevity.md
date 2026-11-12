@@ -76,9 +76,7 @@ NMN ist eines der am besten erforschten Longevity-Supplements der Gegenwart. Die
 
 Es ist kein Wundermittel. Aber für Menschen ab 40, die ihren NAD+-Spiegel aktiv unterstützen wollen, ist NMN eine der wenigen Longevity-Interventionen, für die der Weg von der Grundlagenforschung bis zum Menschen glaubwürdig abgebildet ist. In Kombination mit Bewegung, Fasten und Mitophagie-Unterstützung (z. B. Urolithin A) gehört es zu den interessantesten Bausteinen eines evidenzbasierten Longevity-Stacks.
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=4646927&v=120980&q=593237&r=2836752" rel="sponsored noopener" target="_blank">![Anzeige: NMN Bio](https://www.awin1.com/cshow.php?s=4646927&v=120980&q=593237&r=2836752)</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=4646927&v=120980&q=593237&r=2836752" rel="sponsored noopener" target="_blank">NMN bei NMN Bio ansehen</a>
 
 ## Quellen
 

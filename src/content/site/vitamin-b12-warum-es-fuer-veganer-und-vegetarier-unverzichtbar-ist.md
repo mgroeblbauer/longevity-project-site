@@ -71,8 +71,4 @@ Vitamin B12 ist der einzige Nährstoff, bei dem eine vegane Ernährung ohne Supp
 2.  Watanabe, F. et al. (2014). Vitamin B12-Containing Plant Food Sources for Vegetarians. *Nutrients*, 6(5), 1861–1873.
 3.  Obeid, R. et al. (2019). Cobalamin coenzyme forms are not likely to be superior to cyano- and hydroxyl-cobalamin in prevention or treatment of cobalamin deficiency. *Molecular Nutrition & Food Research*, 59(7), 1364–1372.
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">
-![Anzeige: Vom Achterhof – Nahrungsergänzung](https://www.awin1.com/cshow.php?s=3831429&v=23631&q=509042&r=2836752)
-</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Vitamin B12 bei Vom Achterhof ansehen</a>

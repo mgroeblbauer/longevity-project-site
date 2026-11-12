@@ -65,6 +65,4 @@ Das könnte dich auch interessieren
 2.  Sportärztezeitung: Vitamin D3/K2 – Dosierung, Mangel und gemeinsame Wirkung. [sportaerztezeitung.com](https://sportaerztezeitung.com/rubriken/ernaehrung/12255/vitamin-d3-k2/)
 3.  MDPI Nutrients / PubMed Central: Kombinierte D3+K2-Supplementierung und Biomarker-Effekte (Osteocalcin-Carboxylierung), Review 2024. [pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov)
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">![Anzeige: Vom Achterhof – Nahrungsergänzung](https://www.awin1.com/cshow.php?s=3831429&v=23631&q=509042&r=2836752)</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Vitamin D3 + K2 bei Vom Achterhof ansehen</a>

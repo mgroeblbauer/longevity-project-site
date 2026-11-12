@@ -21,7 +21,7 @@ Einige Artikel enthalten sogenannte Affiliate-Links. Wenn du über einen solchen
 Ich kennzeichne solche Stellen deutlich:
 
 – Artikel mit Affiliate-Links tragen am Anfang einen Hinweis auf Werbung.
-– Empfehlungen sind mit dem Label „Werbung“ versehen, Banner mit „Anzeige“.
+– Empfehlungslinks sind mit dem Label „Werbung“ versehen.
 – Affiliate-Links sind technisch als „sponsored“ markiert.
 
 ## Mit welchen Anbietern ich zusammenarbeite

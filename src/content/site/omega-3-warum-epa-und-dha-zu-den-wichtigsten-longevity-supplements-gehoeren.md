@@ -1,6 +1,6 @@
 ---
 title: "Omega-3: Warum EPA und DHA zu den wichtigsten Longevity-Supplements gehören"
-description: "Fischöl hat ein Imageproblem. Viele verbinden es mit aufgestoßenem Fischgeruch und dem Eindruck, das sei etwas für ältere Menschen oder Sportler mit zu viel Zeit für Supplements. Dabei…"
+description: "Fischöl hat ein Imageproblem: Man denkt an fischiges Aufstoßen und an ein Mittel für Ältere oder für Sportler, die sich eingehend mit Supplements beschäftigen. Dabei…"
 url: "/omega-3-warum-epa-und-dha-zu-den-wichtigsten-longevity-supplements-gehoeren/"
 date: "2026-04-10T01:13:44"
 modified: "2026-10-09T15:35:21"
@@ -12,7 +12,7 @@ wpId: 2221
 image: "/images/omega3-lachs.jpg"
 ---
 
-Fischöl hat ein Imageproblem. Viele verbinden es mit aufgestoßenem Fischgeruch und dem Eindruck, das sei etwas für ältere Menschen oder Sportler mit zu viel Zeit für Supplements. Dabei gehören EPA und DHA – die beiden entscheidenden Omega-3-Fettsäuren – zu den am besten erforschten und wirkungsreichsten Substanzen in der gesamten Longevity-Wissenschaft. Wer länger gesund leben will, sollte das ernst nehmen.
+Fischöl hat ein Imageproblem: Man denkt an fischiges Aufstoßen und an ein Mittel für Ältere oder für Sportler, die sich eingehend mit Supplements beschäftigen. Dabei gehören EPA und DHA – die beiden entscheidenden Omega-3-Fettsäuren – zu den am besten erforschten und wirkungsreichsten Substanzen in der gesamten Longevity-Wissenschaft. Wer länger gesund leben will, sollte das ernst nehmen.
 
 *Hinweis: Dieser Artikel enthält Werbung in Form von Affiliate-Links. Wenn du darüber ein Produkt kaufst, erhalte ich eine kleine Provision – für dich ändert sich am Preis nichts.*
 
@@ -67,6 +67,4 @@ Das könnte dich auch interessieren
 2.  Sala-Vila et al.: Blood omega-3 is inversely related to risk of early-onset dementia. Studie 2025.
 3.  Sala-Vila et al.: Using an erythrocyte fatty acid fingerprint to predict risk of all-cause mortality. American Journal of Clinical Nutrition, Oktober 2021. [pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov)
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">![Anzeige: Vom Achterhof – Nahrungsergänzung](https://www.awin1.com/cshow.php?s=3831429&v=23631&q=509042&r=2836752)</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Omega-3 bei Vom Achterhof ansehen</a>

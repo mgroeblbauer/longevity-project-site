@@ -113,8 +113,4 @@ Wie immer gilt: Das hier ersetzt keine ärztliche Beratung. Wer Medikamente nimm
 
 *Alle Inhalte auf longevity-project.de dienen ausschließlich der Information und ersetzen keine ärztliche Beratung.*
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">
-![Anzeige: Vom Achterhof – Nahrungsergänzung](https://www.awin1.com/cshow.php?s=3831429&v=23631&q=509042&r=2836752)
-</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Astaxanthin bei Vom Achterhof ansehen</a>

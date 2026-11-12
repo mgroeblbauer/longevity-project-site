@@ -57,9 +57,7 @@ Der entscheidende Unterschied: Beim Matcha trinkst du das gesamte Blatt, nicht n
 
 **Meine Variante für unterwegs:** Ich rühre den Matcha zuerst mit einem kleinen Schuss warmem Wasser glatt und gieße dann den Weißdorn- oder Brennnesseltee aus dem Thermobecher darüber. So bleibt es klümpchenfrei. Ein Schüttelbecher funktioniert auch gut.
 
-<a href="https://www.awin1.com/cread.php?s=3831426&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">
-![](https://www.awin1.com/cshow.php?s=3831426&v=23631&q=509042&r=2836752)
-</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831426&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Matcha bei Vom Achterhof ansehen</a>
 
 ## Matcha und Kräutertee: Eine schöne Kombination
 
@@ -83,6 +81,4 @@ Grüntee ist der unkomplizierte, frische Begleiter für jeden Tag. Matcha ist di
 
 Probier es einfach aus: ein Löffelchen Matcha in deinen Lieblingstee, und du bekommst Farbe und Frische mit dazu.
 
-<a href="https://www.awin1.com/cread.php?s=4955213&v=23631&q=610573&r=2836752" rel="sponsored noopener" target="_blank">
-![](https://www.awin1.com/cshow.php?s=4955213&v=23631&q=610573&r=2836752)
-</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=4955213&v=23631&q=610573&r=2836752" rel="sponsored noopener" target="_blank">Matcha bei Vom Achterhof ansehen</a>

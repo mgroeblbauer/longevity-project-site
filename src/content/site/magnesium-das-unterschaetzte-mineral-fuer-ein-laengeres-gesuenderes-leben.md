@@ -68,6 +68,4 @@ Das könnte dich auch interessieren
 1.  Bundesinstitut für Risikobewertung (BfR): BfR bewertet empfohlene Tageshöchstmenge für die Aufnahme von Magnesium über Nahrungsergänzungsmittel, Stellungnahme Nr. 034/2017 vom 12. Dezember 2017. [bfr.bund.de](https://www.bfr.bund.de/cm/343/bfr-bewertet-empfohlene-tageshoechstmenge-fuer-die-aufnahme-von-magnesium-ueber-nahrungsergaenzungsmittel.pdf)
 2.  Stiftung Warentest: Magnesium gegen Krämpfe – Wirkung und Studienlage, Februar 2026. [test.de](https://www.test.de)
 
-Anzeige
-
-<a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">![Anzeige: Vom Achterhof – Nahrungsergänzung](https://www.awin1.com/cshow.php?s=3831429&v=23631&q=509042&r=2836752)</a>
+**Werbung:** <a href="https://www.awin1.com/cread.php?s=3831429&v=23631&q=509042&r=2836752" rel="sponsored noopener" target="_blank">Magnesium bei Vom Achterhof ansehen</a>

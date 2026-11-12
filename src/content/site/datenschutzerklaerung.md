@@ -1,9 +1,9 @@
 ---
 title: "Datenschutzerklärung"
-description: "Rechtliches Datenschutzerklärung Wer wir sind Textvorschlag: Die Adresse unserer Website ist: https://longevity-project.de. Kommentare Textvorschlag: Wenn Besucher Kommentare auf der…"
+description: "Welche Daten beim Besuch von longevity-project.de verarbeitet werden, wer dafür verantwortlich ist und welche Rechte du hast."
 url: "/datenschutzerklaerung/"
 date: "2026-10-15T14:41:46"
-modified: "2026-10-15T14:41:46"
+modified: "2026-11-12T21:00:00"
 author: "Michael Gröblbauer"
 lang: "de"
 type: "seite"
@@ -12,50 +12,58 @@ wpId: 2630
 
 # Datenschutzerklärung
 
-## Wer wir sind
+Hier erfährst du, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden und welche Rechte du hast. Die Seite ist bewusst schlank gebaut: kein Tracking, keine Werbe-Cookies, keine Kommentarfunktion, kein Nutzerkonto.
 
-**Textvorschlag:** Die Adresse unserer Website ist: https://longevity-project.de.
+## Verantwortlicher
 
-## Kommentare
+Michael Gröblbauer
+GRÖBLBAUER The media production
+Werftbahnstr. 8
+24143 Kiel
+Deutschland
 
-**Textvorschlag:** Wenn Besucher Kommentare auf der Website hinterlassen, erfassen wir die im Kommentarformular angezeigten Daten sowie die IP-Adresse des Besuchers und die User-Agent-Zeichenfolge des Browsers, um Spam zu erkennen.
+E-Mail: [info@themediapro.de](mailto:info@themediapro.de)
 
-Aus deiner E-Mail-Adresse kann eine anonymisierte Zeichenfolge erstellt (auch Hash genannt) und dem Gravatar-Dienst übergeben werden, um zu prüfen, ob du diesen benutzt. Die Datenschutzerklärung des Gravatar-Dienstes findest du hier: https://automattic.com/privacy/. Nachdem dein Kommentar freigegeben wurde, ist dein Profilbild öffentlich im Kontext deines Kommentars sichtbar.
+## Hosting und Server-Logfiles
 
-## Medien
+Diese Website besteht aus statischen Seiten und wird bei Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaka, Zypern, gehostet. Beim Aufruf übermittelt dein Browser technisch notwendige Daten an den Hoster, vor allem deine IP-Adresse, Datum und Uhrzeit, die aufgerufene Seite, den Browsertyp und die Seite, von der du kommst. Hostinger verarbeitet diese Daten, um die Seite auszuliefern und die Sicherheit zu gewährleisten.
 
-**Textvorschlag:** Wenn du Bilder auf die Website hochlädst, solltest du vermeiden, Bilder mit eingebetteten Standortdaten (EXIF-GPS) hochzuladen. Besucher der Website können Bilder von der Website herunterladen und daraus beliebige Standortdaten extrahieren.
+Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb). Ich selbst sehe diese Logfiles nicht aus und führe keine Auswertung deines Besuchs durch.
 
-## Cookies
+Mit Hostinger besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. Wenn Daten in die USA übermittelt werden, geschieht das auf Grundlage des EU-US Data Privacy Framework oder von Standardvertragsklauseln.
 
-**Textvorschlag:** Wenn du einen Kommentar auf unserer Website schreibst, kannst du einwilligen, deinen Namen, deine E-Mail-Adresse und deine Website in Cookies zu speichern. Dies ist eine Komfortfunktion, damit du all diese Daten nicht erneut eingeben musst, wenn du einen weiteren Kommentar schreibst. Diese Cookies werden ein Jahr lang gespeichert.
+## Cookies und Tracking
 
-Wenn du unsere Anmeldeseite besuchst, werden wir ein temporäres Cookie setzen, um festzustellen, ob dein Browser Cookies akzeptiert. Dieses Cookie enthält keine personenbezogenen Daten und wird verworfen, wenn du dein Browser schließt.
+Diese Website setzt selbst keine Cookies. Ich nutze keine Analyse-Werkzeuge (kein Google Analytics, kein Matomo, kein Facebook-Pixel) und keine Werbenetzwerke. Die Schriftarten liegen auf dem eigenen Server, es werden keine Schriften von Google geladen.
 
-Wenn du dich anmeldest, werden wir einige Cookies setzen, um deine Anmeldeinformationen und Anzeigeoptionen zu speichern. Anmelde-Cookies verfallen nach zwei Tagen und Cookies für die Anzeigeoptionen nach einem Jahr. Falls du bei der Anmeldung „Angemeldet bleiben“ auswählst, wird deine Anmeldung zwei Wochen lang aufrechterhalten. Mit der Abmeldung aus deinem Konto werden die Anmelde-Cookies gelöscht.
+## Affiliate-Links
 
-Wenn du einen Artikel bearbeitest oder veröffentlichst, wird ein zusätzliches Cookie in deinem Browser gespeichert. Dieses Cookie enthält keine personenbezogenen Daten und verweist nur auf die Beitrags-ID des Artikels, den du gerade bearbeitet hast. Das Cookie verfällt nach einem Tag.
+Einige Artikel enthalten Affiliate-Links (siehe [Transparenz & Affiliate-Hinweis](/transparenz/)). Sie sind als Werbung gekennzeichnet.
 
-## Eingebettete Inhalte von anderen Websites
+**Klick auf einen Affiliate-Link:** Erst wenn du einen solchen Link anklickst, verlässt du diese Website. Der Anbieter oder das Affiliate-Netzwerk (zum Beispiel Awin) kann dann Cookies setzen oder ähnliche Technik nutzen, um den Kauf dem Link zuzuordnen und mir die Provision zu gutschreiben. Dafür ist der jeweilige Anbieter verantwortlich. Details stehen in dessen Datenschutzerklärung, bei Awin unter [awin.com/de/datenschutzerklaerung](https://www.awin.com/de/datenschutzerklaerung).
 
-**Textvorschlag:** Beiträge auf dieser Website können eingebettete Inhalte beinhalten (z. B. Videos, Bilder, Beiträge etc.). Eingebettete Inhalte von anderen Websites verhalten sich exakt so, als ob der Besucher die andere Website besucht hätte.
+Es werden keine Werbebanner oder Bilder von Affiliate-Netzwerken eingebunden. Beim bloßen Aufruf der Seite wird daher keine Verbindung zu einem Netzwerk aufgebaut.
 
-Diese Websites können Daten über dich erheben, Cookies benutzen, zusätzliche Tracking-Dienste von Dritten einbetten und deine Interaktion mit diesem eingebetteten Inhalt aufzeichnen, inklusive deiner Interaktion mit dem eingebetteten Inhalt, falls du ein Konto hast und auf dieser Website angemeldet bist.
+Die Cookies und Zugriffe auf deinem Endgerät, die beim Anbieter nach dem Klick entstehen, richten sich nach dessen eigener Einwilligungslösung.
 
-## Mit wem wir deine Daten teilen
+## Kontakt per E-Mail
 
-**Textvorschlag:** Wenn du eine Zurücksetzung des Passworts beantragst, wird deine IP-Adresse in der E-Mail zur Zurücksetzung enthalten sein.
+Wenn du mir schreibst, verarbeite ich deine E-Mail-Adresse, den Inhalt deiner Nachricht und die Metadaten der Mail, um deine Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (wenn es um einen Vertrag geht) oder lit. f (allgemeine Anfragen). Ich lösche die Daten, sobald die Anfrage erledigt ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
 
-## Wie lange wir deine Daten speichern
+## Externe Links
 
-**Textvorschlag:** Wenn du einen Kommentar schreibst, wird dieser inklusive Metadaten zeitlich unbegrenzt gespeichert. Auf diese Art können wir Folgekommentare automatisch erkennen und freigeben, anstatt sie in einer Moderations-Warteschlange festzuhalten.
+Diese Website verlinkt auf externe Seiten (zum Beispiel Studien auf PubMed oder Behörden). Beim Anklicken gelten die Datenschutzbestimmungen der jeweiligen Seite. Ich habe darauf keinen Einfluss.
 
-Für Benutzer, die sich auf unserer Website registrieren, speichern wir zusätzlich die personenbezogenen Daten, die sie in ihren Benutzerprofilen angeben. Alle Benutzer können jederzeit ihre persönlichen Informationen einsehen, verändern oder löschen (der Benutzername kann nicht verändert werden). Administratoren der Website können diese Informationen ebenfalls einsehen und verändern.
+## Speicherdauer
 
-## Welche Rechte du an deinen Daten hast
+Server-Logfiles werden von Hostinger nur so lange gespeichert, wie es für den Betrieb und die Sicherheit nötig ist. E-Mails speichere ich, bis deine Anfrage erledigt ist, danach nur, soweit Aufbewahrungspflichten bestehen.
 
-**Textvorschlag:** Wenn du ein Konto auf dieser Website besitzt oder Kommentare geschrieben hast, kannst du einen Export deiner personenbezogenen Daten bei uns anfordern, inklusive aller Daten, die du uns mitgeteilt hast. Darüber hinaus kannst du die Löschung aller personenbezogenen Daten, die wir über dich gespeichert haben, anfordern. Dies umfasst nicht die Daten, die wir für administrative, rechtliche oder sicherheitsrelevante Zwecke aufbewahren müssen.
+## Deine Rechte
 
-## Wohin deine Daten gesendet werden
+Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21). Wenn du eine Einwilligung erteilt hast, kannst du sie jederzeit mit Wirkung für die Zukunft widerrufen. Schreib dafür einfach an [info@themediapro.de](mailto:info@themediapro.de).
 
-**Textvorschlag:** Besucher-Kommentare können von einem automatisierten Dienst zur Spam-Erkennung untersucht werden.
+Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Für mich zuständig ist das Unabhängige Landeszentrum für Datenschutz Schleswig-Holstein (ULD), Holstenstraße 98, 24103 Kiel.
+
+## Änderungen
+
+Ich passe diese Erklärung an, wenn sich die Website oder die Rechtslage ändert. Es gilt die jeweils aktuelle Fassung auf dieser Seite.
