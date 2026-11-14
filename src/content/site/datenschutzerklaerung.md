@@ -34,7 +34,7 @@ Mit Hostinger besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO. W
 
 ## Cookies und Tracking
 
-Diese Website setzt selbst keine Cookies. Ich nutze keine Analyse-Werkzeuge (kein Google Analytics, kein Matomo, kein Facebook-Pixel) und keine Werbenetzwerke. Die Schriftarten liegen auf dem eigenen Server, es werden keine Schriften von Google geladen.
+Diese Website setzt selbst keine Cookies und braucht deshalb kein Cookie-Banner. Ich nutze keine Analyse-Werkzeuge (kein Google Analytics, kein Matomo, kein Facebook-Pixel) und keine Werbenetzwerke. Die Schriftarten liegen auf dem eigenen Server, es werden keine Schriften von Google geladen.
 
 ## Affiliate-Links
 
@@ -46,9 +46,21 @@ Es werden keine Werbebanner oder Bilder von Affiliate-Netzwerken eingebunden. Be
 
 Die Cookies und Zugriffe auf deinem Endgerät, die beim Anbieter nach dem Klick entstehen, richten sich nach dessen eigener Einwilligungslösung.
 
-## Kontakt per E-Mail
+## Kontaktformular und E-Mail
 
-Wenn du mir schreibst, verarbeite ich deine E-Mail-Adresse, den Inhalt deiner Nachricht und die Metadaten der Mail, um deine Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (wenn es um einen Vertrag geht) oder lit. f (allgemeine Anfragen). Ich lösche die Daten, sobald die Anfrage erledigt ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+Wenn du mir über das Kontaktformular oder per E-Mail schreibst, verarbeite ich deinen Namen, deine E-Mail-Adresse, den Inhalt deiner Nachricht und die Metadaten der Mail, um deine Anfrage zu beantworten. Das Formular wird auf dem Server von Hostinger verarbeitet und per E-Mail an mich weitergeleitet. Zum Schutz vor Spam prüft der Server, ob das Formular nicht zu schnell oder zu oft abgeschickt wird, dafür wird kurzzeitig ein anonymisierter Wert deiner IP-Adresse verwendet. Es werden keine Fremdanbieter eingebunden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (wenn es um einen Vertrag geht) oder lit. f (allgemeine Anfragen). Ich lösche die Daten, sobald die Anfrage erledigt ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+
+## Newsletter
+
+Wenn du dich zum Newsletter anmeldest, verarbeite ich deine E-Mail-Adresse, um dir die gewünschten E-Mails zu schicken. Die Anmeldung läuft im Double-Opt-in-Verfahren: Du bekommst zuerst eine Bestätigungs-E-Mail und bist erst nach dem Klick auf den Link angemeldet. Dafür speichere ich Zeitpunkt und IP-Adresse der Anmeldung und der Bestätigung als Nachweis.
+
+Der Versand erfolgt über den Dienst Brevo (Brevo, 106 boulevard Haussmann, 75008 Paris, Frankreich) als Auftragsverarbeiter nach Art. 28 DSGVO. Die Daten werden in der EU verarbeitet. Brevo kann Öffnungen und Klicks in den E-Mails statistisch auswerten, sofern das in meinem Konto aktiviert ist. Aktuell nutze ich diese Auswertung nicht.
+
+Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst sie jederzeit mit Wirkung für die Zukunft widerrufen, zum Beispiel über den Abmeldelink in jeder E-Mail. Danach lösche ich deine Adresse aus dem Verteiler. Der Nachweis über die frühere Anmeldung wird noch so lange aufbewahrt, wie es zur Abwehr von Ansprüchen nötig ist.
+
+## Lokale Speicherung im Browser
+
+Auf der Seite "100 Dinge" speichert dein Browser, welche Punkte du abgehakt hast (Local Storage). Diese Daten bleiben auf deinem Gerät, werden nicht an mich oder Dritte übertragen und dienen nur dazu, deinen Fortschritt beim nächsten Besuch wieder anzuzeigen. Du kannst sie mit dem Button "Fortschritt zurücksetzen" oder in den Browser-Einstellungen löschen.
 
 ## Externe Links
 
@@ -56,7 +68,7 @@ Diese Website verlinkt auf externe Seiten (zum Beispiel Studien auf PubMed oder 
 
 ## Speicherdauer
 
-Server-Logfiles werden von Hostinger nur so lange gespeichert, wie es für den Betrieb und die Sicherheit nötig ist. E-Mails speichere ich, bis deine Anfrage erledigt ist, danach nur, soweit Aufbewahrungspflichten bestehen.
+Server-Logfiles werden von Hostinger nur so lange gespeichert, wie es für den Betrieb und die Sicherheit nötig ist. E-Mails und Formularnachrichten speichere ich, bis deine Anfrage erledigt ist, danach nur, soweit Aufbewahrungspflichten bestehen. Newsletter-Adressen speichere ich bis zur Abmeldung.
 
 ## Deine Rechte
 

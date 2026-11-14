@@ -8,6 +8,7 @@ author: "Michael Gröblbauer"
 lang: "de"
 type: "seite"
 wpId: 2620
+widget: "kontakt"
 ---
 
 # Lass uns reden!
@@ -15,5 +16,3 @@ wpId: 2620
 ## Ich freue mich auf deine Nachricht
 
 Ich freue mich darauf, von dir zu hören! Fülle einfach dieses Formular aus, und ich melde mich so schnell wie möglich bei dir.
-
-*\[Formular: wird in der neuen Seite ersetzt\]*

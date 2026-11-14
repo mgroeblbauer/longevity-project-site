@@ -39,9 +39,11 @@ for (const f of mds) {
   if (m) urlByName.set(path.basename(f, '.md'), m[1]);
 }
 
-let n = 0, cut = 0;
+let n = 0, cut = 0, skipped = 0;
 for (const f of mds) {
   let t = fs.readFileSync(f, 'utf8');
+  // Entwürfe (draft: true) bleiben im Vault und gelangen nicht ins öffentliche Repo
+  if (/^draft:\s*true\s*$/m.test(t.split(/^---\s*$/m)[1] ?? '')) { skipped++; continue; }
   const before = t.length;
   t = t.replace(/^##\s+Anmerkungen zum Entwurf[\s\S]*?(?=^##\s|(?![\s\S]))/gm, '');
   if (t.length !== before) cut++;
@@ -66,4 +68,4 @@ for (const f of files.filter((f) => /\.(jpe?g|png|webp|avif|gif|svg)$/i.test(f))
   }
   imgs++;
 }
-console.log(`sync: ${n} Textdateien (${cut} mit internem Abschnitt gekürzt), ${imgs} Bilder`);
+console.log(`sync: ${n} Textdateien (${cut} mit internem Abschnitt gekürzt, ${skipped} Entwürfe übersprungen), ${imgs} Bilder`);

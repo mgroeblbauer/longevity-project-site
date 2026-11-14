@@ -1,0 +1,28 @@
+---
+---
+<form class="formular formular--kontakt" action="/api/kontakt.php" method="post" data-form="kontakt" novalidate>
+  <p>
+    <label for="k-name">Dein Name</label>
+    <input id="k-name" name="name" type="text" autocomplete="name" required maxlength="100" />
+  </p>
+  <p>
+    <label for="k-mail">Deine E-Mail-Adresse</label>
+    <input id="k-mail" name="email" type="email" autocomplete="email" required maxlength="200" />
+  </p>
+  <p>
+    <label for="k-text">Deine Nachricht</label>
+    <textarea id="k-text" name="nachricht" rows="7" required maxlength="5000"></textarea>
+  </p>
+  <p class="falle" aria-hidden="true">
+    <label for="k-web">Bitte leer lassen</label>
+    <input id="k-web" name="website" type="text" tabindex="-1" autocomplete="off" />
+  </p>
+  <input type="hidden" name="ts" value="" />
+  <button type="submit">Nachricht senden</button>
+  <p class="hinweis">
+    Mit dem Absenden stimmst du zu, dass ich deine Angaben zur Beantwortung deiner Anfrage verarbeite. Mehr dazu in der
+    <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>.
+  </p>
+  <p class="status" role="status" aria-live="polite"></p>
+</form>
+<script src="/forms.js" defer is:inline></script>

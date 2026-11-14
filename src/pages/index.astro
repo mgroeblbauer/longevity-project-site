@@ -1,11 +1,27 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Newsletter from '../widgets/Newsletter.astro';
+import '../styles/startseite.css';
 
-const artikel = (await getCollection('site'))
-  .filter((e) => e.data.type === 'artikel' && !e.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 6);
+const alle = (await getCollection('site')).filter((e) => e.data.type === 'artikel' && !e.data.draft);
+const neu = alle.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 5);
+const datum = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' });
+
+// "Unsere Einordnung": Balken 1 bis 4 = wie belastbar die Studienlage ist
+const einordnung = [
+  { name: 'Kreatin', urteil: 'Gut belegt, auch jenseits des Sports', stufe: 4, url: '/kreatin-eines-der-am-besten-belegten-supplements-nicht-nur-fuer-sportler/' },
+  { name: 'Magnesium', urteil: 'Belegt bei einem echten Mangel', stufe: 3, url: '/magnesium-das-unterschaetzte-mineral-fuer-ein-laengeres-gesuenderes-leben/' },
+  { name: 'Eisen', urteil: 'Nur nach Bluttest sinnvoll', stufe: 3, url: '/eisen-haeufig-bei-frauen-defizitaer-aber-nur-bei-nachgewiesenem-mangel-sinnvoll/' },
+  { name: 'Zink', urteil: 'Gegen Erkältung nur früh, vorbeugend unklar', stufe: 2, url: '/zink-das-unterschaetzte-spurenelement-und-warum-mehr-nicht-besser-ist/' },
+  { name: 'NMN', urteil: 'Vorläufig: kleine, kurze Studien', stufe: 2, url: '/nmn-nad-longevity/' },
+];
+const themen = [
+  ['Nährstoffe und Supplements', 'Magnesium, Omega-3, Vitamin D3 und K2, Kreatin, NMN und mehr'],
+  ['Ernährung und Darm', 'Ketose, Kefir und Joghurt, Butyrat'],
+  ['Heilpflanzen und Ayurveda', 'Leber und Mariendistel, Sidakraut, sechs traditionelle Pflanzen, Dosha-Test'],
+  ['Zellen, Sauna und Alltag', 'Mitophagie, Sauna, die Liste der 100 Dinge'],
+];
 ---
 
 <Base
@@ -13,38 +29,125 @@ const artikel = (await getCollection('site'))
   description="Verständlich erklärt: Was Nahrungsergänzung, Ernährung und Alltag für ein langes, gesundes Leben wirklich bringen. Ohne Heilsversprechen, mit Quellen."
   url="/"
 >
-  <section class="held">
+  <section class="hero" aria-labelledby="hero-titel">
+    <div class="wrap hero__in">
+      <div>
+        <h1 id="hero-titel">Mehr gesunde Jahre. Mit dem, was wirklich belegt ist.</h1>
+        <p class="hero__text">
+          Verständlich erklärt: Was Nahrungsergänzung, Ernährung und Alltag für ein langes, gesundes Leben wirklich bringen.
+          Ohne Heilsversprechen, mit Quellen.
+        </p>
+        <div class="knoepfe">
+          <a class="knopf knopf--gold" href="/start-hier/">Hier anfangen</a>
+          <a class="knopf knopf--rand" href="#artikel">Neueste Artikel lesen</a>
+        </div>
+      </div>
+
+      <aside class="einordnung" aria-labelledby="einordnung-titel">
+        <h2 id="einordnung-titel">Unsere Einordnung</h2>
+        <p class="einordnung__hinweis">Wie belastbar die Studienlage ist, in fünf Beispielen aus dem Blog.</p>
+        <ul>
+          {
+            einordnung.map((e, i) => (
+              <li>
+                <a class="zeile" href={e.url} style={`--r:${i}`}>
+                  <span class="zeile__name">{e.name}</span>
+                  <span class="zeile__urteil">{e.urteil}</span>
+                  <span class="meter" style={`--on:${e.stufe};--r:${i}`} aria-hidden="true" />
+                  <span class="sr">Belastbarkeit {e.stufe} von 4</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="arbeitsweise">
     <div class="wrap">
-      <p class="eyebrow" style="color: var(--gold)">Longevity Project</p>
-      <h1>Mehr gesunde Jahre. Mit dem, was wirklich belegt ist.</h1>
-      <p>
-        Verständlich erklärt: Was Nahrungsergänzung, Ernährung und Alltag für ein langes, gesundes Leben wirklich
-        bringen. Ohne Heilsversprechen, mit Quellen.
-      </p>
-      <div class="knoepfe">
-        <a class="knopf knopf--gold" href="/start-hier/">Hier anfangen</a>
-        <a class="knopf knopf--rand" href="/blog/">Neueste Artikel lesen</a>
+      <h2 class="gross" id="arbeitsweise">Wie dieser Blog arbeitet</h2>
+      <div class="prinzipien">
+        <div class="prinzip">
+          <h3>Jede Aussage hat eine Quelle</h3>
+          <p>Studien, Behörden, Leitlinien. Wo die Lage dünn ist, steht das im Text und nicht im Kleingedruckten.</p>
+        </div>
+        <div class="prinzip">
+          <h3>Werbung bleibt sichtbar</h3>
+          <p>Affiliate-Links sind gekennzeichnet. Wie sich der Blog finanziert, steht auf der <a href="/transparenz/">Transparenz-Seite</a>.</p>
+        </div>
+        <div class="prinzip">
+          <h3>Abraten gehört dazu</h3>
+          <p>Eisen nur nach Bluttest, Zink nicht auf Vorrat. Wenn ein Präparat nichts bringt, schreibe ich das.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="wrap" style="padding-top: 3.5rem">
-    <h2 style="margin-top: 0">Neueste Artikel</h2>
-    <ul class="karten">
-      {
-        artikel.map((a) => (
-          <li>
-            <a class="karte" href={a.data.url}>
-              {a.data.image ? <img src={a.data.image} alt="" loading="lazy" width="1024" height="683" /> : <div class="platz" />}
-              <div>
-                {a.data.category && <span class="kat">{a.data.category}</span>}
-                <h3>{a.data.title}</h3>
-                <p>{a.data.description}</p>
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+  <section class="abschnitt abschnitt--salbei" aria-labelledby="themen-titel">
+    <div class="wrap">
+      <h2 class="gross" id="themen-titel">Womit du anfangen kannst</h2>
+      <ul class="themen">
+        {
+          themen.map(([name, text]) => (
+            <li>
+              <a class="thema" href="/blog/">
+                <span class="thema__name">{name}</span>
+                <span class="thema__text">{text}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="autor-titel">
+    <div class="wrap autor">
+      <figure class="autor__bild">
+        <img src="/images/autor-portrait.jpg" alt="Porträt des Autors von Longevity Project, lächelnd, in dunklem Hemd" width="737" height="1000" loading="lazy" />
+      </figure>
+      <div>
+        <h2 id="autor-titel">Was braucht man eigentlich, um glücklich zu sein und sich wohl zu fühlen?</h2>
+        <p>
+          In den letzten Jahren habe ich mich intensiver mit Ernährung und Wellness beschäftigt. Dabei bin ich auf einfache
+          Prinzipien gestoßen und habe viel ausprobiert. Diese Erfahrungen möchte ich mit euch teilen, und vielleicht könnt ihr
+          das ein oder andere für euch mitnehmen.
+        </p>
+        <p><strong>Ich bin kein Arzt.</strong> Ich teile Erfahrungen und prüfe sie anhand der Studienlage.</p>
+        <p>Auf euer Wohl!</p>
+        <p><a class="textlink" href="/ueber-mich/">Mehr über mich</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="abschnitt abschnitt--salbei" id="artikel" aria-labelledby="neu-titel">
+    <div class="wrap">
+      <h2 class="gross" id="neu-titel">Zuletzt erschienen</h2>
+      <ul class="neu">
+        {
+          neu.map((a) => (
+            <li>
+              <a class="beitrag" href={a.data.url}>
+                <span class="beitrag__titel">{a.data.title}</span>
+                <span class="beitrag__datum">{datum.format(a.data.date)}</span>
+                <span class="beitrag__meta">{a.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p style="margin-top: 1.5rem"><a class="textlink" href="/blog/">Alle Artikel ansehen</a></p>
+    </div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="news-titel">
+    <div class="wrap news">
+      <div>
+        <h2 id="news-titel">Neue Studien, kurz eingeordnet</h2>
+        <p>Eine E-Mail, wenn es etwas Neues gibt. Kein Spam, Abmeldung jederzeit.</p>
+      </div>
+      <Newsletter />
+    </div>
   </section>
 </Base>

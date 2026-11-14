@@ -9,12 +9,13 @@ interface Props {
   type?: 'website' | 'article';
   published?: Date;
   modified?: Date;
+  noindex?: boolean;
 }
-const { title, description = '', url = Astro.url.pathname, image, type = 'website', published, modified } = Astro.props;
+const { title, description = '', url = Astro.url.pathname, image, type = 'website', published, modified, noindex: pageNoindex = false } = Astro.props;
 const site = 'https://longevity-project.de';
 const canonical = new URL(url, site).href;
 const fullTitle = url === '/' ? 'Longevity Project – Gesund älter werden, belegt erklärt' : `${title} – Longevity Project`;
-const noindex = import.meta.env.PUBLIC_NOINDEX === 'true';
+const noindex = import.meta.env.PUBLIC_NOINDEX === 'true' || pageNoindex;
 const ogImage = image ? new URL(image, site).href : undefined;
 
 const jsonLd =
@@ -51,6 +52,7 @@ const nav = [
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     <link rel="preload" href="/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />

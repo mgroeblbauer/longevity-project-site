@@ -17,6 +17,8 @@ const site = defineCollection({
     image: z.string().optional(),
     imageAlt: z.string().default(''),
     wpId: z.number().optional(),
+    widget: z.enum(['kontakt', '100-dinge']).optional(),
+    noindex: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });

@@ -1,0 +1,83 @@
+/* Startseite (aus dem Entwurf übernommen) */
+/* Hero */
+.hero{background:var(--wald-tief);color:var(--warmweiss)}
+.hero__in{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);align-items:end;padding-top:clamp(56px,9vw,120px);padding-bottom:clamp(56px,8vw,104px)}
+.hero h1{font-family:var(--serif);font-weight:350;font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0;font-size:clamp(2.75rem,7.2vw,6.4rem);line-height:.98;letter-spacing:-.025em;margin:0 0 clamp(24px,3vw,40px)}
+.hero__text{max-width:34em;font-size:1.15rem;color:rgba(251,248,242,.92);margin:0 0 36px}
+
+/* Einordnung (das eine große Element) */
+.einordnung{border-top:2px solid var(--gold);padding-top:22px}
+.einordnung h2{font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 48;font-size:1.65rem;line-height:1.15;margin:0 0 6px}
+.einordnung__hinweis{margin:0 0 18px;font-size:.95rem;color:rgba(251,248,242,.84)}
+.einordnung ul{list-style:none;margin:0;padding:0}
+.zeile{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:center;padding:15px 0;border-top:1px solid rgba(251,248,242,.16);text-decoration:none}
+.zeile:hover .zeile__name{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
+.zeile__name{font-family:var(--serif);font-size:1.3rem;font-weight:400;font-variation-settings:"opsz" 36}
+.zeile__urteil{grid-column:1;font-size:.95rem;color:rgba(251,248,242,.88)}
+.meter{grid-column:2;grid-row:1 / span 2;width:100px;height:5px;background:repeating-linear-gradient(90deg,rgba(251,248,242,.38) 0 22px,transparent 22px 26px)}
+.meter::before{content:"";display:block;height:100%;width:calc(var(--on) * 26px - 4px);background:var(--gold);-webkit-mask:repeating-linear-gradient(90deg,#000 0 22px,transparent 22px 26px);mask:repeating-linear-gradient(90deg,#000 0 22px,transparent 22px 26px);animation:fuellen 1s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--r) * 140ms + 450ms)}
+@keyframes fuellen{from{width:0}}
+
+/* Abschnitte */
+.abschnitt{padding:clamp(64px,9vw,120px) 0}
+.abschnitt--salbei{background:var(--salbei)}
+h2.gross{font-family:var(--serif);font-weight:340;font-variation-settings:"opsz" 120,"SOFT" 0;font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.04;letter-spacing:-.02em;margin:0 0 clamp(28px,4vw,56px);max-width:16em}
+
+/* Arbeitsweise */
+.prinzipien{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--linie)}
+.prinzip{padding:28px clamp(16px,2.5vw,36px) 8px 0}
+.prinzip + .prinzip{padding-left:clamp(16px,2.5vw,36px);border-left:1px solid var(--linie)}
+.prinzip h3{font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 48;font-size:1.5rem;line-height:1.2;margin:0 0 10px}
+.prinzip p{margin:0;color:var(--tinte-weich);max-width:30em}
+.prinzip a{color:var(--gold-text);font-weight:600;text-underline-offset:4px}
+
+/* Themen */
+.themen{list-style:none;margin:0;padding:0;border-top:1px solid var(--linie)}
+.thema{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr) auto;gap:8px clamp(16px,4vw,56px);align-items:baseline;padding:clamp(20px,2.6vw,34px) 8px;border-bottom:1px solid var(--linie);text-decoration:none;transition:background-color .25s,padding .25s}
+.thema:hover{background:var(--salbei);padding-left:20px;padding-right:20px}
+.thema__name{font-family:var(--serif);font-weight:340;font-variation-settings:"opsz" 96;font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.08;letter-spacing:-.015em}
+.thema__text{color:var(--tinte-weich);font-size:1rem}
+.thema__zahl{font-weight:600;font-size:.95rem;color:var(--gold-text);white-space:nowrap}
+
+/* Autor */
+.autor{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,6vw,88px);align-items:start}
+.autor__bild{margin:0;aspect-ratio:4/5;overflow:hidden;background:#EEF0EE}
+.autor__bild img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.autor h2{font-family:var(--serif);font-weight:340;font-variation-settings:"opsz" 120;font-size:clamp(1.9rem,3.8vw,3rem);line-height:1.08;letter-spacing:-.018em;margin:0 0 22px}
+.autor p{margin:0 0 16px;max-width:36em}
+.platzhalter{background:#FFF4D6;border:1px dashed var(--gold-text);padding:14px 18px;font-size:.95rem}
+.textlink{color:var(--wald-tief);font-weight:600;text-underline-offset:5px;text-decoration-color:var(--gold);text-decoration-thickness:2px}
+
+/* Artikel */
+.neu{list-style:none;margin:0;padding:0;border-top:2px solid var(--wald-tief)}
+.beitrag{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 32px;padding:26px 0;border-bottom:1px solid var(--linie);text-decoration:none}
+.beitrag__titel{font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 60;font-size:clamp(1.3rem,2.2vw,1.75rem);line-height:1.2;letter-spacing:-.01em;max-width:26em}
+.beitrag:hover .beitrag__titel{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:6px}
+.beitrag__meta{grid-column:1;color:var(--tinte-weich);font-size:.95rem;max-width:44em}
+.beitrag__datum{grid-column:2;grid-row:1;color:var(--tinte-weich);font-size:.92rem;white-space:nowrap}
+
+/* Newsletter */
+.news{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,6vw,88px);align-items:center}
+.news h2{font-family:var(--serif);font-weight:340;font-variation-settings:"opsz" 120;font-size:clamp(2rem,4.2vw,3.3rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 16px}
+.news p{margin:0;max-width:30em;color:var(--tinte-weich)}
+
+
+@media (max-width:960px){
+  .hero__in{grid-template-columns:1fr;align-items:start}
+  .autor,.news{grid-template-columns:1fr}
+  .autor__bild{aspect-ratio:4/5;max-width:340px}
+}
+@media (max-width:760px){
+  .prinzipien{grid-template-columns:1fr}
+  .prinzip,.prinzip + .prinzip{padding:24px 0 8px;border-left:0}
+  .prinzip + .prinzip{border-top:1px solid var(--linie)}
+  .thema{grid-template-columns:1fr auto}
+  .thema__text{grid-column:1 / -1;grid-row:2}
+  .beitrag{grid-template-columns:1fr}
+  .beitrag__datum{grid-column:1;grid-row:auto}
+}
+@media (prefers-reduced-motion:reduce){ .meter::before{animation:none} }
+
+/* Helle Schrift auf dunklem Grund (globale Überschriftfarbe überschreiben) */
+.hero h1, .hero h2, .hero a.zeile, .zeile__name { color: var(--warmweiss); }
+.hero a { text-decoration: none; }

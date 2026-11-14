@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Kontakt from '../widgets/Kontakt.astro';
+import dinge100 from '../widgets/100-dinge.html?raw';
 
 export async function getStaticPaths() {
   const entries = (await getCollection('site')).filter((e) => !e.data.draft);
@@ -15,6 +17,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
 const isArticle = d.type === 'artikel';
+const vollbild = d.widget === '100-dinge';
 const datum = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(d.date);
 ---
 
@@ -26,20 +29,23 @@ const datum = new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(d.d
   type={isArticle ? 'article' : 'website'}
   published={d.date}
   modified={d.modified}
+  noindex={d.noindex}
 >
   <article class="artikel lese">
-    {isArticle && d.category && <p class="eyebrow">{d.category}</p>}
-    {!isArticle && /^#\s/m.test(entry.body ?? '') ? null : <h1>{d.title}</h1>}
-    {isArticle && (
+    {isArticle && !vollbild && d.category && <p class="eyebrow">{d.category}</p>}
+    {d.widget === '100-dinge' || (!isArticle && /^#\s/m.test(entry.body ?? '')) ? null : <h1>{d.title}</h1>}
+    {isArticle && !vollbild && (
       <p class="meta">
         Von {d.author} · <time datetime={d.date.toISOString()}>{datum}</time>
       </p>
     )}
-    {isArticle && d.image && (
+    {isArticle && !vollbild && d.image && (
       <figure class="titelbild">
         <img src={d.image} alt={d.imageAlt} width="1024" height="683" fetchpriority="high" />
       </figure>
     )}
     <div class="prosa"><Content /></div>
+    {d.widget === 'kontakt' && <Kontakt />}
   </article>
+  {d.widget === '100-dinge' && <div class="widget-100" set:html={dinge100} />}
 </Base>

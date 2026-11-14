@@ -1,0 +1,307 @@
+<div class="lp100"><style>.lp100{--forest: #1C3B32;
+--forest-deep: #0F241E;
+--amber: #C9962E;
+--parchment: #F6F2E9;
+--ink: #22281F;
+--ring-track: #DCD6C4;
+--line: rgba(28,59,50,0.15);}
+.lp100,.lp100 *{box-sizing:border-box;}
+.lp100{background:var(--parchment);color:var(--ink);font-family:var(--sans);line-height:1.6;}
+.lp100 .lp-ad{font-size:14px;max-width:760px;margin:0 auto 16px;padding:0 24px;}
+.lp100 .lp-banner{text-align:center;margin:40px 0;}
+.lp100 .lp-banner img{max-width:100%;height:auto;}
+.lp100 .wrap{max-width:760px; margin:0 auto; padding:0 24px 120px;}
+.lp100 .tracker-bar{position:sticky; top:0; z-index:10;
+background:var(--forest-deep);
+color:var(--parchment);
+padding:12px 24px;
+display:flex; align-items:center; justify-content:space-between;
+font-family:'IBM Plex Mono',monospace;
+font-size:13px;
+letter-spacing:0.02em;}
+.lp100 .tracker-bar .track{flex:1; height:4px; background:rgba(246,242,233,0.2);
+margin:0 16px; border-radius:2px; overflow:hidden;}
+.lp100 .tracker-bar .fill{height:100%; width:0%; background:var(--amber);
+transition:width .4s ease;}
+.lp100 .hero{padding:64px 0 40px; text-align:center;}
+.lp100 .hero .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:12px;
+letter-spacing:0.14em; text-transform:uppercase;
+color:var(--forest); opacity:0.75; margin-bottom:18px;}
+.lp100 h1{font-family:var(--serif); font-weight:600; font-optical-sizing:auto;
+font-size:clamp(32px,6vw,52px); line-height:1.08; margin:0 0 20px;
+color:var(--forest-deep);}
+.lp100 .hero p.sub{font-size:17px; max-width:540px; margin:0 auto; color:var(--ink); opacity:0.85;}
+.lp100 .ring-wrap{display:flex; justify-content:center; margin:40px 0 8px;}
+.lp100 .ring-label{font-family:var(--serif); font-size:15px; text-align:center; opacity:0.7; margin-bottom:48px;}
+.lp100 #ringPercent{font-family:'IBM Plex Mono',monospace; font-size:28px; font-weight:500; fill:var(--forest-deep);}
+.lp100 .cat{margin-top:56px;}
+.lp100 .cat-head{display:flex; align-items:baseline; gap:14px; margin-bottom:6px;
+border-bottom:1px solid var(--line); padding-bottom:14px;}
+.lp100 .cat-num{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--amber); font-weight:500;}
+.lp100 .cat-title{font-family:var(--serif); font-size:23px; font-weight:600; color:var(--forest-deep);}
+.lp100 .cat-desc{font-size:14px; opacity:0.65; margin:8px 0 20px;}
+.lp100 ul.items{list-style:none; margin:0; padding:0;}
+.lp100 li.item{display:flex; align-items:flex-start; gap:12px;
+padding:12px 0; border-bottom:1px dashed var(--line);}
+.lp100 li.item:last-child{border-bottom:none;}
+.lp100 .item input[type=checkbox]{appearance:none; -webkit-appearance:none;
+width:20px; height:20px; min-width:20px; margin-top:2px;
+border:1.5px solid var(--forest); border-radius:4px;
+cursor:pointer; position:relative; background:white;
+transition:background .15s, border-color .15s;}
+.lp100 .item input[type=checkbox]:checked{background:var(--forest); border-color:var(--forest);}
+.lp100 .item input[type=checkbox]:checked::after{content:''; position:absolute; left:6px; top:2px;
+width:5px; height:10px; border:solid white;
+border-width:0 2px 2px 0; transform:rotate(45deg);}
+.lp100 .item label{cursor:pointer; flex:1; font-size:15.5px;}
+.lp100 .item.checked label{opacity:0.5; text-decoration:line-through; text-decoration-color:var(--amber);}
+.lp100 .aff-pill{display:inline-block; margin-left:8px; padding:2px 9px;
+font-family:'IBM Plex Mono',monospace; font-size:11px;
+background:rgba(201,150,46,0.15); color:#8a6a1f;
+border-radius:20px; text-decoration:none; white-space:nowrap;}
+.lp100 .aff-pill:hover{background:rgba(201,150,46,0.3);}
+.lp100 .disclaimer{margin-top:72px; padding:20px 22px; background:rgba(28,59,50,0.05);
+border:1px solid var(--line); font-size:13.5px; opacity:0.8; border-radius:6px;}
+.lp100 .disclaimer strong{color:var(--forest-deep);}
+.lp100 .reset-btn{display:block; margin:36px auto 0; padding:10px 20px;
+background:none; border:1px solid var(--forest); color:var(--forest);
+font-family:'IBM Plex Mono',monospace; font-size:12px; border-radius:30px;
+cursor:pointer;}
+.lp100 .reset-btn:hover{background:var(--forest); color:var(--parchment);}</style>
+<div class="tracker-bar">
+<span id="barText">0 / 100 erledigt</span>
+<div class="track"><div class="fill" id="barFill"></div></div>
+<span id="barPercent">0%</span>
+</div>
+<div class="wrap">
+<div class="hero">
+<div class="eyebrow">Longevity Project · Lebensliste</div>
+<h1>100 Dinge, die du erlebt haben solltest,<br>um wirklich gelebt zu haben</h1>
+<p class="sub">Longevity heißt nicht nur länger zu leben – sondern mehr vom Leben mitzunehmen. Diese Liste ist dein Wachstumsring: hak ab, was du schon erlebt hast, und leg los mit dem Rest.</p>
+</div>
+<div class="ring-wrap">
+<svg width="180" height="180" viewBox="0 0 180 180">
+<circle cx="90" cy="90" r="80" fill="none" stroke="#DCD6C4" stroke-width="10"/>
+<circle id="ringProgress" cx="90" cy="90" r="80" fill="none" stroke="#C9962E" stroke-width="10"
+stroke-linecap="round" stroke-dasharray="502.4" stroke-dashoffset="502.4"
+transform="rotate(-90 90 90)" style="transition: stroke-dashoffset .5s ease"/>
+<text x="90" y="98" text-anchor="middle" id="ringPercent">0%</text>
+</svg>
+</div>
+<p class="ring-label">dein Lebensring füllt sich mit jedem Häkchen</p>
+<!-- CATEGORY 1 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">01</span><span class="cat-title">Gesundheit &amp; Vitalität</span></div>
+<p class="cat-desc">Die Basis für alles Weitere – dein Körper als Fundament.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i1"><label for="i1">Einen Bluttest machen und dein biologisches Alter bestimmen lassen</label></li>
+<li class="item"><input type="checkbox" id="i2"><label for="i2">Einen Tag lang einen Blutzucker-Sensor (CGM) tragen und beobachten, wie Essen deinen Körper beeinflusst</label></li>
+<li class="item"><input type="checkbox" id="i3"><label for="i3">Eine komplette Nacht mit einem Schlaf-Tracker aufzeichnen lassen</label></li>
+<li class="item"><input type="checkbox" id="i4"><label for="i4">30 Tage ohne Alkohol durchhalten</label></li>
+<li class="item"><input type="checkbox" id="i5"><label for="i5">Eine Kältedusche als tägliches Ritual über 2 Wochen testen</label></li>
+<li class="item"><input type="checkbox" id="i6"><label for="i6">Ein Zahn-Deep-Cleaning beim Profi machen lassen</label></li>
+<li class="item"><input type="checkbox" id="i7"><label for="i7">Deinen VO2max testen lassen</label></li>
+<li class="item"><input type="checkbox" id="i8"><label for="i8">Einen Greifkraft-Test machen (starker Prädiktor für Langlebigkeit)</label></li>
+<li class="item"><input type="checkbox" id="i9"><label for="i9">Ein Jahr lang jeden Morgen 10 Minuten Tageslicht ohne Sonnenbrille tanken</label></li>
+<li class="item"><input type="checkbox" id="i10"><label for="i10">Einen kompletten Gesundheits-Check-up (inkl. Vitaminwerte) machen lassen</label></li>
+</ul>
+</div>
+<!-- CATEGORY 2 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">02</span><span class="cat-title">Ernährung &amp; Genuss</span></div>
+<p class="cat-desc">Essen als Medizin – und als Freude.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i11"><label for="i11">14 Tage intermittierendes Fasten ausprobieren</label></li>
+<li class="item"><input type="checkbox" id="i12"><label for="i12">Dein eigenes Ferment (Kimchi, Sauerkraut oder Kombucha) ansetzen</label></li>
+<li class="item"><input type="checkbox" id="i13"><label for="i13">Einen Monat komplett auf Zucker verzichten</label></li>
+<li class="item"><input type="checkbox" id="i14"><label for="i14">Ein hochwertiges Omega-3-Präparat testen und Blutwerte davor/danach vergleichen <a class="aff-pill" rel="sponsored noopener" target="_blank" href="https://www.awin1.com/cread.php?awinmid=23631&amp;awinaffid=2836752&amp;ued=https%3A%2F%2Fachterhof.de%2Fproducts%2Fvegane-omega-3-kapseln-120-kapseln">Omega-3 ↗</a></label></li>
+<li class="item"><input type="checkbox" id="i15"><label for="i15">Mit einem Ernährungsberater deinen persönlichen Ernährungsplan aufstellen</label></li>
+<li class="item"><input type="checkbox" id="i16"><label for="i16">Ein 3-Gänge-Menü aus regionalen Zutaten selbst kochen</label></li>
+<li class="item"><input type="checkbox" id="i17"><label for="i17">Einen Tag komplett pflanzlich essen und reflektieren, wie du dich fühlst</label></li>
+<li class="item"><input type="checkbox" id="i18"><label for="i18">Rohen Honig direkt bei einem Imker kaufen und probieren</label></li>
+<li class="item"><input type="checkbox" id="i19"><label for="i19">Ein Magnesium-Präparat über 4 Wochen testen und den Schlaf beobachten <a class="aff-pill" rel="sponsored noopener" target="_blank" href="https://www.awin1.com/cread.php?awinmid=23631&amp;awinaffid=2836752&amp;ued=https%3A%2F%2Fachterhof.de%2Fproducts%2Fmagnesium-komplex-180-kapseln%2F">Magnesium ↗</a></label></li>
+<li class="item"><input type="checkbox" id="i20"><label for="i20">Eine eigene Kräuterspirale oder ein Hochbeet anlegen</label></li>
+</ul>
+</div>
+<p class="lp-banner"><strong>Werbung:</strong> <a rel="sponsored noopener" target="_blank" href="https://www.awin1.com/cread.php?s=3831426&amp;v=23631&amp;q=509042&amp;r=2836752">Vegane Nahrungsergänzung bei Vom Achterhof ansehen</a></p>
+<!-- CATEGORY 3 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">03</span><span class="cat-title">Bewegung &amp; Abenteuer</span></div>
+<p class="cat-desc">Dein Körper ist für Bewegung gemacht – gib ihm, was er braucht.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i21"><label for="i21">Deinen ersten 10-km-Lauf finishen</label></li>
+<li class="item"><input type="checkbox" id="i22"><label for="i22">Ein Krafttraining-Programm 12 Wochen konsequent durchziehen</label></li>
+<li class="item"><input type="checkbox" id="i23"><label for="i23">Eine Sauna-Session mit Aufguss und anschließendem Kaltbad erleben</label></li>
+<li class="item"><input type="checkbox" id="i24"><label for="i24">Eine mehrtägige Wanderung (min. 30 km) machen</label></li>
+<li class="item"><input type="checkbox" id="i25"><label for="i25">Schwimmen im offenen Meer oder See, auch wenn's kalt ist</label></li>
+<li class="item"><input type="checkbox" id="i26"><label for="i26">Einen Fitness-Tracker einen Monat konsequent nutzen und Muster erkennen</label></li>
+<li class="item"><input type="checkbox" id="i27"><label for="i27">Eine neue Sportart ausprobieren, die dich wirklich herausfordert</label></li>
+<li class="item"><input type="checkbox" id="i28"><label for="i28">Eine Fahrradtour von mind. 50 km an einem Tag fahren</label></li>
+<li class="item"><input type="checkbox" id="i29"><label for="i29">Einen Klimmzug schaffen (falls noch nicht passiert)</label></li>
+<li class="item"><input type="checkbox" id="i30"><label for="i30">Ein Beweglichkeits-/Mobility-Programm 8 Wochen durchziehen</label></li>
+</ul>
+</div>
+<!-- CATEGORY 4 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">04</span><span class="cat-title">Reisen &amp; Natur</span></div>
+<p class="cat-desc">Die Welt verändert die Perspektive auf dein eigenes Leben.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i31"><label for="i31">Einen Sonnenaufgang an einem besonderen Ort erleben</label></li>
+<li class="item"><input type="checkbox" id="i32"><label for="i32">Allein verreisen, mindestens ein langes Wochenende</label></li>
+<li class="item"><input type="checkbox" id="i33"><label for="i33">Eine Nacht unter freiem Himmel campen, ohne Zelt</label></li>
+<li class="item"><input type="checkbox" id="i34"><label for="i34">Einen Ort besuchen, an dem eine "Blue Zone" (Langlebigkeits-Region) liegt</label></li>
+<li class="item"><input type="checkbox" id="i35"><label for="i35">Digital Detox: 72 Stunden komplett ohne Smartphone</label></li>
+<li class="item"><input type="checkbox" id="i36"><label for="i36">Einen kompletten Tag ohne festen Plan in der Natur verbringen</label></li>
+<li class="item"><input type="checkbox" id="i37"><label for="i37">Ein Land besuchen, dessen Sprache du nicht sprichst</label></li>
+<li class="item"><input type="checkbox" id="i38"><label for="i38">Einen ultraleichten Reiserucksack für minimalistisches Reisen testen</label></li>
+<li class="item"><input type="checkbox" id="i39"><label for="i39">Eine Sternennacht fernab von Lichtverschmutzung erleben</label></li>
+<li class="item"><input type="checkbox" id="i40"><label for="i40">Barfuß über eine Wiese oder einen Strand laufen (Grounding)</label></li>
+</ul>
+</div>
+<!-- CATEGORY 5 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">05</span><span class="cat-title">Geist &amp; Achtsamkeit</span></div>
+<p class="cat-desc">Ein langes Leben lohnt sich nur mit einem klaren Kopf.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i41"><label for="i41">30 Tage am Stück meditieren, auch nur 5 Minuten</label></li>
+<li class="item"><input type="checkbox" id="i42"><label for="i42">Ein Dankbarkeitstagebuch 30 Tage führen</label></li>
+<li class="item"><input type="checkbox" id="i43"><label for="i43">Ein Retreat oder Schweigeseminar besuchen, auch nur ein Wochenende</label></li>
+<li class="item"><input type="checkbox" id="i44"><label for="i44">Deine Handynutzung für eine Woche tracken und ehrlich analysieren</label></li>
+<li class="item"><input type="checkbox" id="i45"><label for="i45">Eine Atemtechnik (z. B. Wim Hof, Box Breathing) 14 Tage üben</label></li>
+<li class="item"><input type="checkbox" id="i46"><label for="i46">Einen Therapeuten oder Coach konsultieren – auch präventiv</label></li>
+<li class="item"><input type="checkbox" id="i47"><label for="i47">Eine bewusste Entscheidung treffen, ein "Nein" auszusprechen, das überfällig war</label></li>
+<li class="item"><input type="checkbox" id="i48"><label for="i48">Einen ganzen Tag ohne jede Ablenkung nur einer Sache widmen</label></li>
+<li class="item"><input type="checkbox" id="i49"><label for="i49">Eine Angst bewusst konfrontieren statt ihr auszuweichen</label></li>
+<li class="item"><input type="checkbox" id="i50"><label for="i50">Dein eigenes "Warum" – deinen Lebenssinn – schriftlich formulieren</label></li>
+</ul>
+</div>
+<!-- CATEGORY 6 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">06</span><span class="cat-title">Beziehungen &amp; Gemeinschaft</span></div>
+<p class="cat-desc">Der stärkste Langlebigkeits-Faktor überhaupt: echte Verbindung.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i51"><label for="i51">Einem alten Freund unaufgefordert schreiben, ohne Anlass</label></li>
+<li class="item"><input type="checkbox" id="i52"><label for="i52">Ein ehrliches, unangenehmes Gespräch führen, das überfällig war</label></li>
+<li class="item"><input type="checkbox" id="i53"><label for="i53">Ein Wochenende nur mit der Familie, ohne Arbeit, verbringen</label></li>
+<li class="item"><input type="checkbox" id="i54"><label for="i54">Dich ehrenamtlich engagieren, mindestens einmal</label></li>
+<li class="item"><input type="checkbox" id="i55"><label for="i55">Jemandem "Danke" sagen, dem du es nie richtig gesagt hast</label></li>
+<li class="item"><input type="checkbox" id="i56"><label for="i56">Eine neue Freundschaft nach dem 30. Lebensjahr aufbauen</label></li>
+<li class="item"><input type="checkbox" id="i57"><label for="i57">Deinen Eltern oder Großeltern ihre Lebensgeschichte erzählen lassen und aufnehmen</label></li>
+<li class="item"><input type="checkbox" id="i58"><label for="i58">Einen Streit aktiv beilegen, den du jahrelang mit dir herumträgst</label></li>
+<li class="item"><input type="checkbox" id="i59"><label for="i59">Regelmäßig (wöchentlich) mit den gleichen Menschen etwas unternehmen</label></li>
+<li class="item"><input type="checkbox" id="i60"><label for="i60">Jemandem ohne Anlass eine Freude machen</label></li>
+</ul>
+</div>
+<!-- CATEGORY 7 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">07</span><span class="cat-title">Finanzen &amp; Freiheit</span></div>
+<p class="cat-desc">Finanzielle Klarheit ist auch ein Longevity-Faktor: weniger Stress, mehr Kontrolle.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i61"><label for="i61">Ein 5-Konten-Modell für deine Finanzen aufsetzen</label></li>
+<li class="item"><input type="checkbox" id="i62"><label for="i62">Deinen ersten ETF-Sparplan starten</label></li>
+<li class="item"><input type="checkbox" id="i63"><label for="i63">Einen Notgroschen für 6 Monate Lebenshaltungskosten aufbauen</label></li>
+<li class="item"><input type="checkbox" id="i64"><label for="i64">Deine Schufa/Bonität einmal aktiv einsehen und verstehen</label></li>
+<li class="item"><input type="checkbox" id="i65"><label for="i65">Eine komplette Übersicht aller Verträge und Abos erstellen und ausmisten</label></li>
+<li class="item"><input type="checkbox" id="i66"><label for="i66">Eine zusätzliche Einkommensquelle neben dem Hauptjob aufbauen</label></li>
+<li class="item"><input type="checkbox" id="i67"><label for="i67">Ein Testament oder eine Vorsorgevollmacht aufsetzen</label></li>
+<li class="item"><input type="checkbox" id="i68"><label for="i68">Deinen Stundensatz/Marktwert einmal ehrlich neu kalkulieren</label></li>
+<li class="item"><input type="checkbox" id="i69"><label for="i69">Eine größere Anschaffung bar bezahlen statt auf Kredit</label></li>
+<li class="item"><input type="checkbox" id="i70"><label for="i70">Eine Immobilie oder Kapitalanlage im Detail durchrechnen, auch nur zum Lernen</label></li>
+</ul>
+</div>
+<!-- CATEGORY 8 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">08</span><span class="cat-title">Kreativität &amp; Ausdruck</span></div>
+<p class="cat-desc">Etwas erschaffen, das es ohne dich nicht gäbe.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i71"><label for="i71">Ein Instrument lernen, auch nur die Grundlagen</label></li>
+<li class="item"><input type="checkbox" id="i72"><label for="i72">Ein eigenes kleines Produkt oder Projekt von 0 auf veröffentlichen</label></li>
+<li class="item"><input type="checkbox" id="i73"><label for="i73">Ein Video oder einen Podcast mit deiner eigenen Stimme aufnehmen</label></li>
+<li class="item"><input type="checkbox" id="i74"><label for="i74">Ein Handwerk lernen, das du komplett selbst ausführen kannst</label></li>
+<li class="item"><input type="checkbox" id="i75"><label for="i75">Etwas öffentlich präsentieren – einen Vortrag, ein Video, einen Artikel</label></li>
+<li class="item"><input type="checkbox" id="i76"><label for="i76">Ein eigenes Rezept entwickeln und mehrfach nachkochen</label></li>
+<li class="item"><input type="checkbox" id="i77"><label for="i77">Etwas reparieren, das du eigentlich weggeworfen hättest</label></li>
+<li class="item"><input type="checkbox" id="i78"><label for="i78">Ein Fotobuch oder Tagebuch eines ganzen Jahres erstellen</label></li>
+<li class="item"><input type="checkbox" id="i79"><label for="i79">Etwas anbauen und ernten, das du selbst gepflanzt hast</label></li>
+<li class="item"><input type="checkbox" id="i80"><label for="i80">Eine eigene kleine Marke oder ein Nebenprojekt starten</label></li>
+</ul>
+</div>
+<!-- CATEGORY 9 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">09</span><span class="cat-title">Wissen &amp; Wachstum</span></div>
+<p class="cat-desc">Lernen hört nie auf – und genau das hält jung.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i81"><label for="i81">Ein Fachbuch zum Thema Longevity komplett durchlesen</label></li>
+<li class="item"><input type="checkbox" id="i82"><label for="i82">Einen Online-Kurs zu einem völlig neuen Thema abschließen</label></li>
+<li class="item"><input type="checkbox" id="i83"><label for="i83">Dir eine neue Fähigkeit beibringen, die nichts mit deinem Job zu tun hat</label></li>
+<li class="item"><input type="checkbox" id="i84"><label for="i84">Ein Gespräch mit jemandem führen, der fachlich viel weiter ist als du</label></li>
+<li class="item"><input type="checkbox" id="i85"><label for="i85">Deine eigenen Glaubenssätze über Geld/Erfolg schriftlich hinterfragen</label></li>
+<li class="item"><input type="checkbox" id="i86"><label for="i86">Ein Thema recherchieren, bis du es jemand anderem erklären kannst</label></li>
+<li class="item"><input type="checkbox" id="i87"><label for="i87">Eine neue Sprache mindestens auf A1-Niveau lernen</label></li>
+<li class="item"><input type="checkbox" id="i88"><label for="i88">Ein Museum oder eine Ausstellung besuchen, die dich eigentlich nicht interessiert</label></li>
+<li class="item"><input type="checkbox" id="i89"><label for="i89">Ein Mentoring-Gespräch führen – als Mentor oder Mentee</label></li>
+<li class="item"><input type="checkbox" id="i90"><label for="i90">Eine Meinung, die du lange vertreten hast, aktiv hinterfragen und ggf. ändern</label></li>
+</ul>
+</div>
+<!-- CATEGORY 10 -->
+<div class="cat">
+<div class="cat-head"><span class="cat-num">10</span><span class="cat-title">Vermächtnis &amp; Sinn</span></div>
+<p class="cat-desc">Am Ende zählt, was bleibt.</p>
+<ul class="items">
+<li class="item"><input type="checkbox" id="i91"><label for="i91">Deinen eigenen Nachruf schreiben – und dann dein Leben danach ausrichten</label></li>
+<li class="item"><input type="checkbox" id="i92"><label for="i92">Jemandem etwas beibringen, das dieser Mensch sonst nie gelernt hätte</label></li>
+<li class="item"><input type="checkbox" id="i93"><label for="i93">Einen Brief an dein zukünftiges Ich (in 10 Jahren) schreiben</label></li>
+<li class="item"><input type="checkbox" id="i94"><label for="i94">Ein Werteset für deine Familie/dein Unternehmen schriftlich festhalten</label></li>
+<li class="item"><input type="checkbox" id="i95"><label for="i95">Etwas spenden oder unterstützen, das über deine Lebenszeit hinauswirkt</label></li>
+<li class="item"><input type="checkbox" id="i96"><label for="i96">Ein Baum pflanzen, den du in 20 Jahren wiedersehen kannst</label></li>
+<li class="item"><input type="checkbox" id="i97"><label for="i97">Ein Projekt beenden, das du seit Jahren aufschiebst</label></li>
+<li class="item"><input type="checkbox" id="i98"><label for="i98">Deine wichtigsten Erkenntnisse aus dieser Liste jemandem weitergeben</label></li>
+<li class="item"><input type="checkbox" id="i99"><label for="i99">Bewusst einen Moment als "genug" empfinden – ohne nach mehr zu greifen</label></li>
+<li class="item"><input type="checkbox" id="i100"><label for="i100">Diese Liste in einem Jahr erneut durchgehen und sehen, wie viel sich verändert hat</label></li>
+</ul>
+</div>
+<p class="lp-banner"><strong>Werbung:</strong> <a rel="sponsored noopener" target="_blank" href="https://www.awin1.com/cread.php?s=4955213&amp;v=23631&amp;q=610573&amp;r=2836752">Vegane Nahrungsergänzung bei Vom Achterhof ansehen</a></p>
+<button class="reset-btn" id="resetBtn">Fortschritt zurücksetzen</button>
+</div>
+<script>
+const checkboxes = document.querySelectorAll('.item input[type=checkbox]');
+const total = checkboxes.length; // 100
+const barFill = document.getElementById('barFill');
+const barText = document.getElementById('barText');
+const barPercent = document.getElementById('barPercent');
+const ring = document.getElementById('ringProgress');
+const ringPercent = document.getElementById('ringPercent');
+const circumference = 502.4;
+function update(){
+const checked = document.querySelectorAll('.item input[type=checkbox]:checked').length;
+const pct = Math.round((checked/total)*100);
+barFill.style.width = pct + '%';
+barText.textContent = checked + ' / ' + total + ' erledigt';
+barPercent.textContent = pct + '%';
+ring.style.strokeDashoffset = circumference - (circumference * pct/100);
+ringPercent.textContent = pct + '%';
+}
+checkboxes.forEach(cb => {
+cb.addEventListener('change', () => {
+cb.closest('.item').classList.toggle('checked', cb.checked);
+update();
+localStorage.setItem('lp100_' + cb.id, cb.checked ? '1' : '0');
+});
+});
+document.getElementById('resetBtn').addEventListener('click', () => {
+checkboxes.forEach(cb => { cb.checked = false; cb.closest('.item').classList.remove('checked'); });
+update();
+});
+// Gespeicherten Fortschritt laden
+checkboxes.forEach(cb => {
+if (localStorage.getItem('lp100_' + cb.id) === '1') {
+cb.checked = true;
+cb.closest('.item').classList.add('checked');
+}
+});
+document.getElementById('resetBtn').addEventListener('click', () => {
+checkboxes.forEach(cb => { localStorage.removeItem('lp100_' + cb.id); });
+});
+update();
+</script>
+</div>

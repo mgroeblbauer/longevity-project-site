@@ -1,0 +1,4 @@
+# Keine Konfiguration und keine Hilfsdateien ausliefern
+<FilesMatch "^(config(\.example)?\.php|_helfer\.php)$">
+  Require all denied
+</FilesMatch>

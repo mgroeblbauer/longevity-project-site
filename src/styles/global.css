@@ -5,6 +5,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('/fonts/hanken-grotesk-latin-wght-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --wald-tief: #17352c;
   --wald: #2b5646;
@@ -16,7 +23,7 @@
   --tinte-weich: #3a453f;
   --linie: rgba(23, 53, 44, 0.16);
   --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
-  --sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sans: 'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --rand: clamp(20px, 5vw, 64px);
   --max: 1100px;
   --lese: 720px;
@@ -110,3 +117,27 @@ h3 { font-size: 1.25rem; margin: 2rem 0 0.5rem; font-weight: 600; }
 .hinweis { margin-top: 3rem; padding: 1rem 1.25rem; border: 1px solid var(--linie); border-radius: 8px; font-size: 0.92rem; color: var(--tinte-weich); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Formulare */
+.formular { display: grid; gap: 0.85rem; max-width: 36rem; }
+.formular p { margin: 0; display: grid; gap: 0.35rem; }
+.formular label { font-weight: 600; font-size: 0.95rem; }
+.formular input[type='text'], .formular input[type='email'], .formular textarea {
+  font: inherit; padding: 0.85rem 1rem; border: 1.5px solid var(--wald); border-radius: 4px;
+  background: var(--warmweiss); color: var(--tinte); width: 100%;
+}
+.formular input:focus-visible, .formular textarea:focus-visible, .formular button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.formular button {
+  font: inherit; font-weight: 600; border: 0; border-radius: 4px; cursor: pointer;
+  background: var(--wald-tief); color: var(--warmweiss); padding: 0.95rem 1.5rem; justify-self: start;
+}
+.formular button:hover { background: var(--wald); }
+.formular button:disabled { opacity: 0.6; cursor: wait; }
+.formular .hinweis, .formular small { color: var(--tinte-weich); font-size: 0.85rem; line-height: 1.5; }
+.formular .status { min-height: 1.4em; font-weight: 600; }
+.formular .status--ok { color: var(--wald); }
+.formular .status--fehler { color: #8a2a1a; }
+.formular .falle { position: absolute; left: -9999px; height: 0; overflow: hidden; }
+.widget-100 { margin-top: 1.5rem; }
+
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
